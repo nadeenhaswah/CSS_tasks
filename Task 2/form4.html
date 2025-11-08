@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2- form 4</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        section{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #1ABC9C;
+        }
+        section .form-container{
+            width: 350px;
+            height: auto;
+            background-color: #fff;
+            padding: 40px 40px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        section .form-container h2{
+            font-size: 2.5rem;
+            font-weight: 300;
+        }
+        section .form-container  form{
+            width: 100%;
+            
+        }
+        section .form-container .fields{
+            width: 100%;
+            margin: 20px 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        section .form-container .fields div{
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+        }
+        section .form-container .fields div label{
+            color: #1ABC9C;
+        }
+        section .form-container .fields div input{
+            border: none;
+            width: 100%;
+            border-bottom: 1px gray solid;
+            padding: 5px;
+            color: black;
+            font-weight: 600;
+        }
+        section .form-container .fields div input:focus{
+            outline: none;
+            border-bottom: 1px #1ABC9C solid;
+            /* margin-top: 10px; */
+        }
+        section .form-container  form button{
+            width: 100%;
+            background-color: #1ABC9C;
+            border: 1px #868B8A solid;
+            padding: 13px;
+            font-size: 19px;
+            color: #eee;
+            font-weight: 600;
+            border-radius: 5px;
+        }
+        section .form-container  form p{
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+        }
+        section .form-container  form p a{
+            color: #868B8A;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="form-container">
+            <h2>USER LOGIN</h2>
+            <form>
+                <div class="fields">
+                    <div>
+                        <label for="username">Username</label>
+                        <input type="text" id="username">
+                    </div>
+                    <div>
+                        <label for="password">Password</label>
+                        <input type="password" id="password">
+                    </div>
+                </div>
+                <button>LOGIN</button>
+                <p>
+                    <a href="#">Forget Password ?</a>
+                </p>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

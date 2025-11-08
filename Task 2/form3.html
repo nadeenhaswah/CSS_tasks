@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2 - form 3</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        section{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: linear-gradient(200deg, #39B9A3 , #4ABFA4 , #58C4A6, #65C9A7 ,#8BD6AA );
+        }
+        section .form-container{
+            width: 35%;
+            height: auto;
+            background-color: #fff;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: start;
+            padding:50px 20px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        section .form-container h2{
+            color: #137F75;
+            font-weight: 300;
+            margin-bottom: 50px;
+            font-size: 30px;
+        }
+        section .form-container form{
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        section .form-container form .fields {
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+        section .form-container form .fields input{
+            width: 100%;
+            padding: 20px;
+            border: 2px #D2D2D2 solid ;
+            border-radius: 2px;
+        }
+        section .form-container form .show{
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            gap: 3px;
+            width: 100%;
+        }
+        section .form-container form .show label{
+            font-size: 13px;
+            color: #5B616B;
+        }
+        section .form-container form  button{
+            background-color: #0B847A;
+            border: none;
+            color: #fff;
+            padding: 7px;
+            font-size: 18px;
+            border-radius: 6px;
+            width: 100px;
+            margin-top: 40px;
+            font-weight: 400;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        section .form-container form .links{
+            color: #5B616B;
+            margin-top: 40px;
+            font-size: 13px;
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+            text-align: center;
+        }
+        section .form-container form .links a{
+            text-decoration: none;
+            color:#0B847A;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="form-container">
+            <h2>Login</h2>
+            <form>
+                <div class="fields">
+                    <input type="text" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                </div>
+                <div class="show">
+                    <input type="checkbox" name="show" id="show">
+                    <label for="show">Show Password</label>
+                </div>
+                <button>SIGN IN</button>
+                <div class="links">
+                    <p>Forget <a href="#">Username</a> <span>/</span>
+                        <a href="#">Password?</a>
+                    </p>
+                    <p>Don't have an account ? <a href="#">Sign Up</a></p>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

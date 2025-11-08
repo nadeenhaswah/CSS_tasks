@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2 - form 2</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    section{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        padding-top: 50px;
+    }
+    section .container{
+        width: 60%;
+    }
+    section  .container header{
+        width: 100%;
+        background-color: #DEDEDE;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+
+    }
+    section  .container header .logo{
+        letter-spacing: 1px;
+        font-size: 17px;
+        color: #6D767E;
+        font-weight:700;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    section  .container header .register{
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        list-style-type: none;
+        font-weight:500;
+        display: flex;
+        gap: 10px;
+    }
+    section  .container header .register .signUp{
+        color: #B2B3B4;
+        cursor: pointer;
+    }
+    section  .container header .register .logIn{
+        color: #5E5E5F;
+        cursor: pointer;
+    }
+    section  .container .form-container{
+        margin-top: 30px;
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    section  .container .form-container form {
+        width: 250px;
+    }
+    section  .container .form-container form .field{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-bottom: 20px;
+        color: #5E5E5F;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    section  .container .form-container form .field input{
+        padding: 7px;
+        border: 1px #DEDEDE solid;
+        border-radius: 5px;
+    }
+    section  .container .form-container form button{
+        width: 100%;
+        border: none;
+        background-color: #63AAFF;
+        color: #fff;
+        padding: 7px;
+        border-radius: 5px;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <section>
+        <div class="container">
+            <header>
+                <div class="logo">Scratch</div>
+                <ul class="register">
+                    <li class="signUp">SignUp</li>
+                    <li class="logIn">logIn</li>
+                </ul>
+            </header>
+            <div class="form-container">
+                <form>
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input type="text" id="email">
+                    </div>
+                    <div class="field">
+                        <label for="email">Password</label>
+                        <input type="text" id="email">
+                    </div>
+                    <button>Login</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

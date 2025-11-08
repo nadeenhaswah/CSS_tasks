@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3 - form 1</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        section{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #E3E3FF;
+        }
+        section .form-container{
+            width: 450px;
+            height: auto;
+            background-color: #8887C5;
+            border-radius: 20px;
+            box-shadow: 0 0 20px #8887C5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 20px 10px;
+            gap: 30px;
+        }
+        section .form-container h1{
+            color: #fff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        section .form-container  form{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        section .form-container  form .fields{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        section .form-container  form .fields input{
+            border: none;
+            border-radius: 10px;
+            padding: 10px;
+            width: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+        }
+        section .form-container  form .fields input:focus{
+            outline: none;
+            box-shadow: 0 0 20px gray;
+        }
+        section .form-container  form .fields .name {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        section .form-container  form .fields .name input{
+            width: 48%;
+        }
+        section .form-container  form button{
+            border: none;
+            background-color: #8F8B86;
+            border-radius: 10px;
+            width: 100%;
+            padding: 10px;
+            font-size: 19px;
+            font-weight: 600;
+            cursor: pointer;
+            color: #837F7A;
+        }
+        section .form-container  form  p{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        section .form-container  form  p a{
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="form-container">
+            <h1>Sign Up</h1>
+            <form>
+                <div class="fields">
+                    <div class="name">
+                        <input type="text" placeholder="First Name">
+                        <input type="text" placeholder="Last Name">
+                    </div>
+                    <input type="text" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                    <input type="password" placeholder="Confirm Password">
+                </div>
+                <div>
+                    <input type="checkbox" name="privacy" id="privacy">
+                    <label for="privacy">I accept the Terms of Use & Privacy Policy</label>
+                </div>
+                <button>Sign Up</button>
+                <p>
+                    Already have an account?<a href="#">Login here</a>
+                </p>
+                <p>
+                    Copyright &copy; YourCompany.com
+                </p>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

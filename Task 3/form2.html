@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3 - form 2</title>
+    <script src="https://kit.fontawesome.com/3e1d046fbe.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        section{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: -1;
+            background-image: linear-gradient(to right , #8400CD , #B600C4);
+        }
+        section .main{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 60%;
+            height: auto;
+            background-color: #fff;
+            border-radius: 20px;
+            padding: 20px;
+        }
+        section .main .pic{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+            height: 100%;
+        }
+        section .main .pic  .bg{
+            background-color: #F2F2F2;
+            border-radius: 50%;
+        }
+        section .main .pic img{
+            width: 200px;
+        }
+        section .main .form-container{
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            flex-direction: column;
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        section .main .form-container h2{
+            font-weight: 600;
+        }
+        section .main .form-container form {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            flex-direction: column;
+            width: 70%;
+        }
+        section .main .form-container form .input{
+            display: flex;
+            gap: 20px;
+            color: #6C6C6C;
+            background-color:#E5E5E5 ;
+            padding: 15px;
+            border-radius: 20px;
+            width: 100%;
+        }
+        section .main .form-container form .input input{
+            border: none;
+            outline: none;
+            background: none;
+        }
+        section .main .form-container form .input input.password::placeholder{
+            font-size: 26px;
+        }
+        section .main .form-container form  button{
+            width: 100%;
+            border: none;
+            outline: none;
+            padding: 15px;
+            border-radius: 20px;
+            background-color: #1FCC44;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #fff;
+        }
+        section .main .form-container form p a{
+            color: #1FCC44;
+            text-decoration: none;
+        }
+        section .main .form-container form p span{
+            color: #1FCC44;
+        }
+        section .main .form-container form a{
+            color: #1FCC44;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="main">
+            <div class="pic">
+                <div class="bg">
+                    <img src="images/desktop computer-rafiki.png" alt="PC">
+                </div>
+            </div>
+            <div class="form-container">
+                <h2>Member Login</h2>
+                <form>
+                    <div class="input">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="text" placeholder="Email">
+                    </div>
+                    <div class="input">
+                        <i class="fa-solid fa-lock"></i>
+                        <input class="password" type="password" placeholder=".........">
+                    </div>
+                    <button>LOGIN</button>
+                    <p>Forget <a href="#">Username</a><span> / </span><a href="#">Password ?</a></p>
+                    <a href="#">Create account  <i class="fa-solid fa-arrow-right"></i></a>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
