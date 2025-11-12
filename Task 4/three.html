@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        section{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items:center ;
+            justify-content: center;
+            background-color: #fff;
+        }
+        section .form-container{
+            background-color: #1BBDFD;
+            height: auto;
+            padding: 35px;
+            border-radius: 10px;
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+        section .form-container h3{
+            color: #fff;
+            font-size: 1.4rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        section .form-container form{
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        section .form-container form input{
+            width: 100%;
+            border: none;
+            outline: none;
+            background-color: #fff;
+            padding: 10px 15px;
+            border-radius: 10px;
+        }
+        section .form-container form input::placeholder ,
+        section .form-container form textarea{
+            color: gray;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        section .form-container form textarea{
+            width: 100%;
+            border: none;
+            outline: none;
+            background-color: #fff;
+            padding: 10px 15px;
+            border-radius: 10px;
+        }
+        section .form-container form  button{
+            border: none;
+            background-color: #1157B6;
+            color: #fff;
+            border-radius: 10px;
+            padding: 10px;
+            align-self: flex-start;
+            font-size: 1.2rem;
+        }
+        @media (max-width:600px) {
+            section .form-container {
+                width: 80%;
+            }
+        
+        }
+        @media (min-width:600px) {
+            section .form-container {
+                width: 70%;
+            }
+        }
+        @media (min-width:768px) {
+            section .form-container {
+                width: 60%;
+            }
+        }
+        @media (min-width:992px) {
+            section .form-container {
+                width: 50%;
+            }
+        }
+        @media (min-width:1200px) {
+            section .form-container {
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="form-container">
+            <h3>Contact Us</h3>
+            <form>
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Email">
+                <input type="text" placeholder="XXXX XXXX XXXX ">
+                <textarea rows="7"> Your Message Here ... </textarea>
+                <button>Send</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

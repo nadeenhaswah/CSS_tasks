@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        section{
+            width: 100vw;
+            height: 100vh;
+            background-color: #A2CAFF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        section .form-container{
+            background-color: #fff;
+            width: 30%;
+            height: auto;
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: column;
+            gap: 10px;
+        }
+    
+        section .form-container h2{
+            font-size: 13px;
+            color: #58739B;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 500;
+        }
+        section .form-container p{
+            color: #BDAABB;
+        }
+        section .form-container form{
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+        }
+        section .form-container form div{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        section .form-container form div label{
+            color: #BDAABB;
+        }
+        section .form-container form div input{
+            border-radius: 6px;
+            border: 1px solid #BDAABB;
+            outline: none;
+            padding: 7px;
+            color: #58739B;
+        }
+        section .form-container form div input:focus{
+            border-color: #58739B;
+        }
+        section .form-container form button {
+            border: none;
+            background-color: #45AAFF;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 10px;
+            width: auto;
+            font-size: 1.1rem;
+            margin-top: 20px;
+            cursor: pointer;
+            transition: .4s;
+        }
+        section .form-container form button:hover{
+            background-color: #328bd3;
+        }
+        @media (max-width:600px) {
+            section .form-container{
+                width: 80%;
+                height: auto
+            }
+            section .form-container h2{
+                font-size: 20px;
+            }
+        }
+        @media (min-width:600px) {
+            section .form-container{
+                width: 55%;
+                height: auto;
+            }
+            section .form-container h2{
+                font-size: 30px;
+            }
+        }
+        @media (min-width:768px) {
+            section .form-container{
+                width: 45%;
+                height: auto;
+            }
+            section .form-container h2{
+                font-size: 30px;
+            }
+        }
+        @media (min-width:992px) {
+            section .form-container{
+                width: 35%;
+                height: auto;
+            }
+            section .form-container h2{
+                font-size: 30px;
+            }
+        }
+        @media (min-width:1200px) {
+            section .form-container{
+                width: 25%;
+                height: auto;
+            }
+            section .form-container h2{
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="form-container">
+            <h2>CODEWITHERANDOM</h2>
+            <p>Thank You For Beign With Me</p>
+            <form>
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" >
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="text" id="email" >
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" >
+                </div>
+                <div>
+                    <label for="re-pass">Repeat Password</label>
+                    <input type="password" id="re-pass" >
+                </div>
+
+                <button>Register</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
