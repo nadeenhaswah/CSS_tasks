@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floating</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        section{
+            width: 100vw;
+            height: 100vh;
+            background-color: palevioletred;
+            padding: 30px 15px;
+        }
+        section h4{
+            margin-bottom: 20px;
+        }
+        section div{
+            display: inline-block;
+        }
+        section p:not(.full){
+            background-color: #fff;
+            width: 350px;
+            height: 155px;
+            overflow: hidden;
+            float: left;
+            margin: 10px;
+        }
+        section p.full{
+            border-bottom: 2px solid #000;
+            border-top: 2px solid #000;
+            overflow-y: scroll;
+            height: 70px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h4>Floating Article</h4>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas error suscipit et doloremque quas saepe soluta sequi dolores ipsum! Alias exercitationem nemo velit at! Quo earum facilis dicta sapiente necessitatibus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, nulla! Ea consectetur consequuntur labore eos sunt perspiciatis voluptas quae, molestiae veritatis sequi laudantium nisi totam et itaque nam officia voluptatibus!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas error suscipit et doloremque quas saepe soluta sequi dolores ipsum! Alias exercitationem nemo velit at! Quo earum facilis dicta sapiente necessitatibus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, nulla! Ea consectetur consequuntur labore eos sunt perspiciatis voluptas quae, molestiae veritatis sequi laudantium nisi totam et itaque nam officia voluptatibus!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas error suscipit et doloremque quas saepe soluta sequi dolores ipsum! Alias exercitationem nemo velit at! Quo earum facilis dicta sapiente necessitatibus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, nulla! Ea consectetur consequuntur labore eos sunt perspiciatis voluptas quae, molestiae veritatis sequi laudantium nisi totam et itaque nam officia voluptatibus!</p>
+        </div>
+        <p class="full">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam quos vitae maiores debitis voluptatibus aut cumque nulla, asperiores, hic non error omnis excepturi qui fuga ipsa quidem ullam similique minus.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas error suscipit et doloremque quas saepe soluta sequi dolores ipsum! Alias exercitationem nemo velit at! Quo earum facilis dicta sapiente necessitatibus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, nulla! Ea consectetur consequuntur labore eos sunt perspiciatis voluptas quae, molestiae veritatis sequi laudantium nisi totam et itaque nam officia voluptatibus!</p>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas error suscipit et doloremque quas saepe soluta sequi dolores ipsum! Alias exercitationem nemo velit at! Quo earum facilis dicta sapiente necessitatibus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, nulla! Ea consectetur consequuntur labore eos sunt perspiciatis voluptas quae, molestiae veritatis sequi laudantium nisi totam et itaque nam officia voluptatibus!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas error suscipit et doloremque quas saepe soluta sequi dolores ipsum! Alias exercitationem nemo velit at! Quo earum facilis dicta sapiente necessitatibus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, nulla! Ea consectetur consequuntur labore eos sunt perspiciatis voluptas quae, molestiae veritatis sequi laudantium nisi totam et itaque nam officia voluptatibus!</p>
+        </div>
+    </section>
+</body>
+</html>
