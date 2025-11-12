@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        section{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            border: 5px solid orange;
+        }
+        .col{
+            width: calc(100% / 8 - 5px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 4rem;
+        }        
+        .col-1{
+            background-color: green;
+        }
+        .col-2{
+            background-color:yellow ;
+        }
+        .col-3{
+            background-color: purple ;
+        }
+        .col-4{
+            background-color: gray;
+        }
+        .col-5{
+            background-color:blue ;
+        }
+        .col-6{
+            background-color:orange ;
+        }
+        .col-7{
+            background-color:plum ;
+        }
+        .col-8{
+            background-color:red ;
+        }
+        .col-9{
+            background-color:brown;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="col col-1">1</div>
+        <div class="col col-2">2</div>
+        <div class="col col-3">3</div>
+        <div class="col col-4">4</div>
+        <div class="col col-5">5</div>
+        <div class="col col-6">6</div>
+        <div class="col col-7">7</div>
+        <div class="col col-8">8</div>
+        <div class="col col-9">9</div>
+    </section>
+</body>
+</html>
